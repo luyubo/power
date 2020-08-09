@@ -16,6 +16,13 @@ spring:
       host: 192.168.127.128
       port: 27017
       database: comment
+      #uri: mongodb:192.168.127.128/27017
+#设置时区为东八区
+  jackson:
+    time-zone: GMT+8
+  redis:
+    host: 192.168.127.128
+    port: 6379
 # Mybatis-Plus 配置
 mybatis-plus:
 # mapper-locations: classpath:/mapper/*Mapper.xml
@@ -31,3 +38,9 @@ mybatis-plus:
     lazyLoadingEnabled: true #延时加载的开关
     multipleResultSetsEnabled: true #开启延时加载，否则按需加载属性
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
