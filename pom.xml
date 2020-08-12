@@ -15,6 +15,7 @@
         <module>power-user</module>
         <module>power-eureka</module>
         <module>power-encrypt</module>
+        <module>power-notice</module>
     </modules>
 
     <parent>
