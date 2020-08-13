@@ -1,5 +1,6 @@
 package com.power.notice.pojo;
 
+import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,7 +17,8 @@ import java.io.Serializable;
 public class NoticeFresh implements Serializable {
 
     private static final long serialVersionUID = -7727597013884108210L;
-
+    @TableField("userId")
     private String userId;
+    @TableField("noticeId")
     private String noticeId;
 }
